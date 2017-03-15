@@ -25,13 +25,15 @@ $(document).ready(function(){
     if (contactFlag === false){
       $('#contact').animate({
         top: '-=50',
-        width: '400'
+        width: '400',
+        height: '150'
       }, 1000 );
       contactFlag = true;
     } else {
       $('#contact').animate({
         top: '+=50',
-        width: '125'
+        width: '125',
+        height: '30'
       }, 1000 );
       contactFlag = false;
     }

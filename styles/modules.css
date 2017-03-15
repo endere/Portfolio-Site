@@ -14,12 +14,15 @@
 }
 #about{
   top: 25px;
+  z-index: 999;
 }
 #contact{
   top: 75px;
+  z-index: 99;
 }
 #portfolio{
   top: 125px;
+  z-index: 9;
 }
 .portfolioPiece{
   width: 400px;
