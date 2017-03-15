@@ -33,3 +33,9 @@
 .template{
   display: none;
 }
+#contactInfo{
+  display: none;
+}
+#aboutInfo{
+  display: none;
+}
