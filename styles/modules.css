@@ -1,0 +1,35 @@
+#menu{
+  background-color: green;
+}
+.section{
+  color: lightblue;
+  margin: 5px;
+  width: 125px;
+  background-color: green;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  border-bottom: 5px solid;
+  border-radius: 5px;
+}
+#about{
+  top: 25px;
+}
+#contact{
+  top: 75px;
+}
+#portfolio{
+  top: 125px;
+}
+.portfolioPiece{
+  width: 400px;
+  height: 400px;
+  display: block;
+  display: none;
+  font-size: 20px;
+  border: 2px solid;
+  background-color: green;
+}
+.template{
+  display: none;
+}
