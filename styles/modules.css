@@ -1,5 +1,6 @@
 #menu{
   background-color: green;
+  display: none;
 }
 .section{
   color: lightblue;
@@ -41,4 +42,21 @@
 }
 #aboutInfo{
   display: none;
+}
+.burger{
+  float:right;
+}
+.bar{
+  background-color: white;
+  margin: 6px;
+  height: 5px;
+  width: 35px;
+}
+@media screen and (min-width: 700px){
+  .burger {
+    visibility: hidden;
+  }
+  #menu{
+   visibility: visible;
+  }
 }
