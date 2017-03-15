@@ -33,7 +33,7 @@ $(document).ready(function(){
       $('#contact').animate({
         top: '+=50',
         width: '125',
-        height: '30'
+        height: '35'
       }, 1000 );
       contactFlag = false;
     }
@@ -56,5 +56,8 @@ $(document).ready(function(){
     $('#contact').fadeToggle(1000);
     $('#portfolio').fadeToggle(1000);
     $('#aboutInfo').slideToggle(1000);
+  });
+  $('.burger').click(function(){
+    $('#menu').fadeToggle();
   });
 });
