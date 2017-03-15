@@ -21,18 +21,27 @@ function portSetup(){
   }
 }
 
-PortfolioObject.prototype.render = function(){
-  console.log('name is' + this.name);
-  createElement('div', 'id', this.name, '', document.getElementById('portfolio'));
-  document.getElementById(this.name).setAttribute('class', 'portfolioPiece');
-  createElement('div', 'class', 'name', this.name, document.getElementById(this.name));
-  createElement('a', 'href', this.link, this.link, document.getElementById(this.name));
-  createElement('img', 'src', this.img, '', document.getElementById(this.name));
-  createElement('p', 'class', 'paragraph', this.description, document.getElementById(this.name));
+PortfolioObject.prototype.toHtml = function(){
+  var $newPortfolioObject = $('div.template').clone();
+  $newPortfolioObject.removeClass('template');
+  $newPortfolioObject.addClass('portfolioPiece');
+  $newPortfolioObject.find('div.name').html(this.name);
+  $newPortfolioObject.find('a').attr('href', this.link);
+  $newPortfolioObject.find('a').html('Here is a link!');
+  $newPortfolioObject.find('img').attr('src', this.img);
+  $newPortfolioObject.find('p').html(this.description);
+  return $newPortfolioObject;
 };
+  // console.log('name is' + this.name);
+  // createElement('div', 'id', this.name, '', document.getElementById('portfolio'));
+  // document.getElementById(this.name).setAttribute('class', 'portfolioPiece');
+  // createElement('div', 'class', 'name', this.name, document.getElementById(this.name));
+  // createElement('a', 'href', this.link, this.link, document.getElementById(this.name));
+  // createElement('img', 'src', this.img, '', document.getElementById(this.name));
+  // createElement('p', 'class', 'paragraph', this.description, document.getElementById(this.name));
 
 portSetup();
-console.log(portObjectArray);
-for (var i = 0; i < portObjectArray.length; i++) {
-  portObjectArray[i].render();
-}
+portObjectArray.forEach(function(i) {
+  $('#portfolio').append(i.toHtml());
+});
+//code heavily drawn from 2nd pair programming lab
