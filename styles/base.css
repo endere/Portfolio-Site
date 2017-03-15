@@ -1,0 +1,38 @@
+body{
+  background-color: black;
+}
+.section{
+  color: lightblue;
+  margin: 50px;
+  width: 125px;
+  background-color: green;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  display: inline;
+  border: 5px solid;
+  border-radius: 5px;
+}
+#about{
+  left: 500px;
+}
+#contact{
+  left: 300px;
+}
+#portfolio{
+  left: 100px;
+}
+.portfolioPiece{
+  width: 500px;
+  height: 500px;
+  display: block;
+  display: none;
+  font-size: 25px;
+  border: 2px solid;
+  background-color: green;
+}
+img{
+  position: relative;
+  right: 50px;
+  margin: 50px;
+}

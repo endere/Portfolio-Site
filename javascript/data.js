@@ -1,0 +1,12 @@
+'use strict';
+var testOneDesc = 'This is a sun I made in ms paint!';
+var testOne = ['Sun','www.google.com','images/artSampleOne.png',testOneDesc];
+var testTwoDesc = 'This is my attempt at an impressionist piece, inspired by the work of Claude Monet.';
+var testTwo = ['Smile','www.google.com','images/artSampleTwo.png',testTwoDesc];
+var testThreeDesc = 'This tree is a narrative on the duality of good and evil that struggles within each of us. It took me the longest, and I am very proud of it.';
+var testThree = ['Tree','www.google.com','images/artSampleThree.png',testThreeDesc];
+var testFourDesc = 'This star represents the ambition and drive of the human spirit.';
+var testFour = ['Star','www.google.com','images/artSampleFour.png',testFourDesc];
+var testFiveDesc = 'This is my attempt at the vivid realism of renaissance artists, like Michelangelo or Boticelli.';
+var testFive = ['Person','www.google.com','images/artSampleFive.png',testFiveDesc];
+var portfolioData = [testOne, testTwo, testThree, testFour, testFive];
