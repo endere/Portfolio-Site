@@ -10,7 +10,6 @@
   align-items: center;
   font-size: 30px;
   position: absolute;
-  border-bottom: 5px solid;
   border-radius: 5px;
 }
 #about{
@@ -57,6 +56,14 @@
     visibility: hidden;
   }
   #menu{
-   visibility: visible;
+   display: block;
   }
+}
+.hide{
+  position: relative;
+  bottom: 30px;
+  display: none;
+  font-size: 20px;
+  float: right;
+  margin: 0;
 }
