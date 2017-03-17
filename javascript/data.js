@@ -47,7 +47,7 @@ var rawData = [
   {
     name: 'Person',
     link: 'www.google.com',
-    img: 'images/artSampleTwo.png',
+    img: 'images/artSampleFive.png',
     date: '1-29-1742',
     body: 'This is my attempt at the vivid realism of renaissance artists, like Michelangelo or Boticelli.',
     category: 'portfolioPiece'

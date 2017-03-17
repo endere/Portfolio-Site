@@ -11,6 +11,7 @@
   font-size: 30px;
   position: absolute;
   border-radius: 5px;
+  border: 1px solid;
 }
 #about{
   top: 25px;
@@ -25,12 +26,11 @@
   z-index: 9;
 }
 .portfolioPiece{
-  width: 400px;
-  height: 400px;
+  width: 100%;
   display: block;
   display: none;
   font-size: 20px;
-  border: 2px solid;
+  border: 1px solid;
   background-color: green;
 }
 .template{
@@ -58,12 +58,4 @@
   #menu{
    display: block;
   }
-}
-.hide{
-  position: relative;
-  bottom: 30px;
-  display: none;
-  font-size: 20px;
-  float: right;
-  margin: 0;
 }
