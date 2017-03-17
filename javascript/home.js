@@ -3,56 +3,74 @@ var portFlag = false;
 var contactFlag = false;
 var aboutFlag = false;
 $(document).ready(function(){
-  $('#portfolio').click(function(){
+  $('#portfolio > h1').click(function(){
     if (portFlag === false){
       $('#portfolio').animate({
         top: '-=100',
-        width: '400'
+        width: '96%'
       }, 1000 );
       portFlag = true;
-    } else {
-      $('#portfolio').animate({
-        top: '+=100',
-        width: '125'
-      }, 1000 );
-      portFlag = false;
+      $('#portfolio > h3').fadeToggle(1000);
+      $('#about').fadeToggle(1000);
+      $('#contact').fadeToggle(1000);
+      $('.portfolioPiece').slideToggle(1000);
     }
+  });
+  $('#portfolio > h3').click(function(){
+    $('#portfolio').animate({
+      top: '+=100',
+      width: '125'
+    }, 1000 );
+    portFlag = false;
+    $('#portfolio > h3').fadeToggle(1000);
     $('#about').fadeToggle(1000);
     $('#contact').fadeToggle(1000);
     $('.portfolioPiece').slideToggle(1000);
   });
-  $('#contact').click(function(){
+  $('#contact > h1').click(function(){
     if (contactFlag === false){
       $('#contact').animate({
         top: '-=50',
-        width: '400',
+        width: '96%',
         height: '150'
       }, 1000 );
       contactFlag = true;
-    } else {
-      $('#contact').animate({
-        top: '+=50',
-        width: '125',
-        height: '35'
-      }, 1000 );
-      contactFlag = false;
+      $('#contact > h3').fadeToggle(1000);
+      $('#about').fadeToggle(1000);
+      $('#portfolio').fadeToggle(1000);
+      $('#contactInfo').slideToggle(1000);
     }
+  });
+  $('#contact > h3').click(function(){
+    $('#contact').animate({
+      top: '+=50',
+      width: '125',
+      height: '35'
+    }, 1000 );
+    contactFlag = false;
+    $('#contact > h3').fadeToggle(1000);
     $('#about').fadeToggle(1000);
     $('#portfolio').fadeToggle(1000);
     $('#contactInfo').slideToggle(1000);
   });
-  $('#about').click(function(){
+  $('#about > h1').click(function(){
     if (aboutFlag === false){
       $('#about').animate({
-        width: '400'
+        width: '96%'
       }, 1000 );
       aboutFlag = true;
-    } else {
-      $('#about').animate({
-        width: '125'
-      }, 1000 );
-      aboutFlag = false;
+      $('#about > h3').fadeToggle(1000);
+      $('#contact').fadeToggle(1000);
+      $('#portfolio').fadeToggle(1000);
+      $('#aboutInfo').slideToggle(1000);
     }
+  });
+  $('#about > h3').click(function(){
+    $('#about').animate({
+      width: '125'
+    }, 1000 );
+    aboutFlag = false;
+    $('#about > h3').fadeToggle(1000);
     $('#contact').fadeToggle(1000);
     $('#portfolio').fadeToggle(1000);
     $('#aboutInfo').slideToggle(1000);

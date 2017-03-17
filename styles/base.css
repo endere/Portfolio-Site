@@ -5,3 +5,16 @@ img{
   position: relative;
   margin: 20px;
 }
+h2,h4{
+  margin: 0;
+}
+h1{
+all: unset;
+}
+h3{
+  position: relative;
+  display: none;
+  font-size: 20px;
+  float: right;
+  margin: 0;
+}
