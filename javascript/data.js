@@ -12,7 +12,6 @@
 // var portfolioData = [testOne, testTwo, testThree, testFour, testFive];
 
 var rawData = [
-  {"name":"Test","link":"www.google.com","img":"images/template.png","body":"Here is a sample portfolio object I made!","category":"portfolioPiece","date":"3/20/2017"},
   {
     name: 'Sun',
     link: 'www.google.com',

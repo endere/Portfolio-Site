@@ -25,6 +25,6 @@ rawData.forEach(function(i) {
   portObjectArray.push(new PortfolioObject(i));
 });
 portObjectArray.forEach(function(i) {
-  $('.holder').append(i.toHtml());
+  $('#portfolio').append(i.toHtml());
 });
 //code heavily drawn from 2nd pair programming lab
