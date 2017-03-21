@@ -24,7 +24,7 @@
   top: 125px;
   z-index: 9;
 }
-.portfolioPiece{
+.info {
   display: none;
   width: 100%;
   font-size: 20px;
@@ -34,12 +34,7 @@
 .template{
   display: none;
 }
-#contactInfo{
-  display: none;
-}
-#aboutInfo{
-  display: none;
-}
+
 .bar{
   background-color: black;
   margin: 6px;

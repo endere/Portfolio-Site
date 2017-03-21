@@ -12,13 +12,14 @@
 // var portfolioData = [testOne, testTwo, testThree, testFour, testFive];
 
 var rawData = [
+
   {
     name: 'Sun',
     link: 'www.google.com',
     img: 'images/artSampleOne.png',
     date: '3-15-2017',
     body: 'This is a sun I made in ms paint!',
-    category: 'portfolioPiece'
+    category: 'info'
   },
   {
     name: 'Smile',
@@ -26,7 +27,7 @@ var rawData = [
     img: 'images/artSampleTwo.png',
     date: '2-12-2016',
     body: 'This is my attempt at an impressionist piece, inspired by the work of Claude Monet.',
-    category: 'portfolioPiece'
+    category: 'info'
   },
   {
     name: 'Tree',
@@ -34,7 +35,7 @@ var rawData = [
     img: 'images/artSampleThree.png',
     date: '7-22-2005',
     body: 'This tree is a narrative on the duality of good and evil that struggles within each of us. It took me the longest, and I am very proud of it.',
-    category: 'portfolioPiece'
+    category: 'info'
   },
   {
     name: 'Star',
@@ -42,7 +43,7 @@ var rawData = [
     img: 'images/artSampleFour.png',
     date: '05-21-1993',
     body: 'This star represents the ambition and drive of the human spirit.',
-    category: 'portfolioPiece'
+    category: 'info'
   },
   {
     name: 'Person',
@@ -50,6 +51,6 @@ var rawData = [
     img: 'images/artSampleFive.png',
     date: '1-29-1742',
     body: 'This is my attempt at the vivid realism of renaissance artists, like Michelangelo or Boticelli.',
-    category: 'portfolioPiece'
+    category: 'info'
   },
 ];
