@@ -24,6 +24,9 @@
   top: 125px;
   z-index: 9;
 }
+#fucksGiven{
+  display: none;
+}
 .info {
   display: none;
   width: 100%;

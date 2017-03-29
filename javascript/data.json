@@ -4,6 +4,7 @@
     "link": "www.google.com",
     "img": "images/artSampleOne.png",
     "date": "3-15-2017",
+    "fucksGiven": "3",
     "body": "This is a sun I made in ms paint!",
     "category": "info"
   },
@@ -12,6 +13,7 @@
     "link": "www.google.com",
     "img": "images/artSampleTwo.png",
     "date": "2-12-2016",
+    "fucksGiven": "5",
     "body": "This is my attempt at an impressionist piece, inspired by the work of Claude Monet.",
     "category": "info"
   },
@@ -20,6 +22,7 @@
     "link": "www.google.com",
     "img": "images/artSampleThree.png",
     "date": "7-22-2005",
+    "fucksGiven": "60",
     "body": "This tree is a narrative on the duality of good and evil that struggles within each of us. It took me the longest, and I am very proud of it.",
     "category": "info"
   },
@@ -28,6 +31,7 @@
     "link": "www.google.com",
     "img": "images/artSampleFour.png",
     "date": "05-21-1993",
+    "fucksGiven": "8",
     "body": "This star represents the ambition and drive of the human spirit.",
     "category": "info"
   },
@@ -36,6 +40,7 @@
     "link": "www.google.com",
     "img": "images/artSampleFive.png",
     "date": "1-29-1742",
+    "fucksGiven": "2",
     "body": "This is my attempt at the vivid realism of renaissance artists, like Michelangelo or Boticelli.",
     "category": "info"
   }
