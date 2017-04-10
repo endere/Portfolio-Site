@@ -10,6 +10,8 @@
   "author": "Erik",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "express-request-proxy": "^2.0.0",
+    "superagent": "^3.5.2"
   }
 }
