@@ -18,7 +18,16 @@
           <p>{{body}}</p>
         </div>
       </script>
-
+      <script id="repo-template" type="text/x-handlebars-template">
+            <li>
+              <a href="{{html_url}}" target="_blank"><p>{{name}}</p></a>
+              <p>Description: {{description}}</p>
+              <p>Language: {{language}}</p>
+              <p>Created: {{created_at}}</p>
+              <p>Last updated: {{updated_at}}</p>
+            </li>
+          </script>
+          <!--Basic formatting taken from kilovolt exercise -->
   </head>
   <body>
     <header>
@@ -56,16 +65,20 @@
       </ul>
       </nav>
     </header>
-    <main class="holder">
-    </main>
+    <div id="holder">
+    </div>
+
     <script src="vendor/page.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src= "tokens.js" type="text/javascript"></script>
     <script src= "javascript/models/data.json" type="text/javascript"></script>
     <!-- <script src= "javascript/views/home.js" type="text/javascript"></script> -->
     <script src= "javascript/models/portfolio.js" type="text/javascript"></script>
     <script src= "javascript/controllers/portfolioController.js" type="text/javascript"></script>
     <script src= "javascript/controllers/contactController.js" type="text/javascript"></script>
     <script src= "javascript/controllers/aboutController.js" type="text/javascript"></script>
-        <script src= "javascript/controllers/routes.js" type="text/javascript"></script>
+    <script src= "javascript/models/repo.js" type="text/javascript"></script>
+    <script src= "javascript/views/repoView.js" type="text/javascript"></script>
+    <script src= "javascript/controllers/routes.js" type="text/javascript"></script>
   </body>
 </html>

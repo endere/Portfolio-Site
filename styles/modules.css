@@ -51,6 +51,9 @@
   margin-top: 200px;
   font-size: 30px;
 }
+#holder{
+  margin-top: 300px;
+}
 @media screen and (min-width: 700px){
   #menu{
    display: inline;
