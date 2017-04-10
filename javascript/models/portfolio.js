@@ -27,23 +27,21 @@ PortfolioObject.prototype.toHtml = function(){
 };
 // portSetup();
 PortfolioObject.loadAll = function(rawData){
-  rawData.forEach(function(i) {
+  rawData.map((i) => {
     portObjectArray.push(new PortfolioObject(i));
   });
 };
 PortfolioObject.fetchAll = function(){
   if(localStorage.rawData){
-    console.log('took this path');
     PortfolioObject.loadAll(JSON.parse(localStorage.rawData));
-    portObjectArray.forEach(function(i) {
+    portObjectArray.map((i) => {
       $('#portfolio').append(i.toHtml());
     });
   } else {
-    $.getJSON('javascript/data.json').then(function(rawData){
-      console.log('test test test');
+    $.getJSON('javascript/models/data.json').then(function(rawData){
       PortfolioObject.loadAll(rawData);
       localStorage.rawData = JSON.stringify(rawData);
-      portObjectArray.forEach(function(i) {
+      portObjectArray.map((i) => {
         $('#portfolio').append(i.toHtml());
       });
     }, function(err) {
